@@ -10,38 +10,34 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Animate on Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=David+Libre" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <script src="javascript.js"></script>
   </head>
-  <body>   
+  <body data-spy="scroll" data-target="#nav-marker" data-offset="0">   
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
+      <nav id="nav-marker" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
+            <a class="navbar-brand" href="#item-1">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a href="#item-1" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
+                    <a href="#item-2" class="nav-link">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
+                    <a href="#item-3" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#item-4" class="nav-link">Contact</a>
                 </li>
               </ul>
               <form class="form-inline my-2 my-lg-0">
@@ -52,9 +48,9 @@
           </nav>
 
           <!-- Jumbotron -->
-          <div class="jumbotron jumbotron-fluid">
+          <div id="item-1" class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h1 class="display-3">Fluid jumbo heading</h1>
+              <h1 class="display-3">Jumbo heading</h1>
               <p class="lead">Jumbo helper text</p>
               <hr class="my-2">
               <p>More info</p>
@@ -63,8 +59,8 @@
             </div>
           </div>
 
-          <!-- Photo Grid -->
-          <div class="container-fluid">
+          <!-- Photo Grid/Portfolio -->
+          <div id="item-2" class="container-fluid">
               <div class="row">
                   <div class="image-block col-sm-4" style="background: url(http://via.placeholder.com/470x200) no-repeat center top;background-size:cover;">
                       <p> Image Info </p>
@@ -95,43 +91,44 @@
             <div class="row">
               <div class="row">
                 <div class="col-md-4">
-                  <h3>Heading3</h3>
+                  <h3>Intro</h3>
                 </div> 
-                <div class="col-md-8">
+                <div class="col-md-8 col-sm-12">
                   <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet, totam at excepturi repellat enim harum maiores cupiditate</p> 
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12 mt-sm-2">
                     <h4>Heading4</h4>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa est perferendis, magni animi accusamus id ipsum voluptas suscipit
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12 mt-sm-2">
                     <h4>Heading4</h4>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa est perferendis, magni animi accusamus id ipsum voluptas suscipit
                 </div>
-                <div class="col-md-4">
-                  <h4>Heading4</h4>
+                <div class="col-md-4 col-sm-12 mt-sm-2">
+                  <h4 id="item-3">Heading4</h4>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa est perferendis, magni animi accusamus id ipsum voluptas suscipit
                 </div>
               </div>
             </div>
 
+            <!-- About -->
             <div class="row border-top border-bottom border-dark">
               <div class="row">
-                <div class="col-md-4">
-                    <h3>Heading3</h3>
+                <div class="col-md-4 col-sm-5">
+                    <h3>About Me</h3>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a ea accusamus accusantium deserunt corporis minima doloremque veniam 
                 </div> 
-                <div class="col-md-2">
+                <div class="col-md-2 d-sm-none d-none">
                   <img src="http://via.placeholder.com/170x200" alt="" class="img-thumbnail float-right">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-7 mt-2">
                   <h4>Heading4</h4>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa est perferendis, magni animi accusamus id ipsum voluptas suscipit earum ad incidunt voluptates dolor sapiente autem aut obcaecati tempore corporis non.
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa est perferendis, magni animi accusamus id ipsum voluptas suscipit earum ad incidunt voluptates dolor sapiente autem aut obcaecati tempore corporis
                 </div>
               </div>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-md-4">
                   <h3>Heading3</h3>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a ea accusamus accusantium deserunt corporis minima doloremque veniam 
@@ -143,77 +140,46 @@
                   <h4>Heading4</h4>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa est perferendis, magni animi accusamus id ipsum voluptas suscipit earum ad incidunt voluptates dolor sapiente autem aut obcaecati tempore corporis non.
                 </div>
-              </div>
+              </div> -->
             </div>
-            <!-- <div class="row border-bottom border-dark">
+
+            <!-- Contact -->
+            <div class="row">
               <div class="row">
-                <div class="col-md-3">
-                  <h3>Heading</h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a ea accusamus accusantium deserunt corporis minima doloremque veniam 
+                <div class="col-md-4">
+                  <h3 id="item-4">Contact</h3>
                 </div> 
-                <div class="col-md-2">
-                  <img src="http://via.placeholder.com/170x200" alt="" class="img-thumbnail">
-                </div>
-                <div class="col-md-7">
-                  <h4>Heading</h4>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa est perferendis, magni animi accusamus id ipsum voluptas suscipit earum ad incidunt voluptates dolor sapiente autem aut obcaecati tempore corporis non.
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3">
-                  <h3>Heading</h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut a ea accusamus accusantium deserunt corporis minima doloremque veniam 
-                </div>
-                <div class="col-md-2">
-                  <img src="http://via.placeholder.com/170x200" alt="" class="img-thumbnail">
-                </div>
-                <div class="col-md-7">
-                  <h4>Heading</h4>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa est perferendis, magni animi accusamus id ipsum voluptas suscipit earum ad incidunt voluptates dolor sapiente autem aut obcaecati tempore corporis non.
-                </div>
-              </div>
-            </div> -->
-
-            <div class="row border-bottom border-dark">
-              <div class="row">
-                <div class="row">
-                  <div class="col-md-4">
-                    <h3>Heading3</h3>
-                  </div> 
-                  <div class="col-md-8">
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet, totam at excepturi repellat enim harum maiores cupiditate</p> 
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-5">
-                </div>
-                <div class="col-md">
-                  <h6>Heading6</h6>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                  <h6>Heading6</h6>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                </div>
-                <div class="col-md">
-                  <h6>Heading6</h6>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                  <h6>Heading6</h6>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <div class="col-md-8">
+                  <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eveniet, totam at excepturi repellat enim harum maiores cupiditate</p> 
                 </div>
               </div>
             </div>
-
-            <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><i class="fas fa-caret-up"></i></a>
+            <div class="row border-bottom border-dark">
+              <div class="col-md-4">
+              </div>
+              <div class="col-md col-sm-4">
+                <h6><b><i class="fas fa-mobile-alt ml-1 mr-2"></i>Phone</b></h6>
+                <p>123-123-1234</p>
+              </div>
+              <div class="col-md col-sm-4">
+                <h6><b><i class="far fa-envelope mr-2"></i>Email</b></h6>
+                <p>kelvin@email.com</p>
+              </div>
+              <div class="col-md col-sm-4">
+                <h6><b><i class="fas fa-map-marked ml-1 mr-2"></i>Address</b></h6>
+                <address>
+                  123 12rd Pike Place<br>
+                  Seattle, WA 98101
+                </address>
+              </div>
+            </div>
           </div>
-
-
-	    
-        
       
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, Bootstrap JS, AOS, custom js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>AOS.init();</script>
+    <script src="javascript.js"></script>
   </body>
 </html>
